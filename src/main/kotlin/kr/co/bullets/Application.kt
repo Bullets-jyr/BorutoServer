@@ -1,6 +1,6 @@
 package kr.co.bullets
 
-import io.ktor.application.*
+import io.ktor.server.application.*
 import kr.co.bullets.plugins.*
 
 fun main(args: Array<String>) {

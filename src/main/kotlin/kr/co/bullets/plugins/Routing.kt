@@ -1,8 +1,8 @@
 package kr.co.bullets.plugins
 
-import io.ktor.application.*
-import io.ktor.response.*
-import io.ktor.routing.*
+import io.ktor.server.application.*
+import io.ktor.server.routing.*
+import kr.co.bullets.routes.getAllHeroes
 import kr.co.bullets.routes.root
 
 fun Application.configureRouting() {
@@ -11,5 +11,6 @@ fun Application.configureRouting() {
 //            call.respondText("Hello World!")
 //        }
         root()
+        getAllHeroes()
     }
 }
