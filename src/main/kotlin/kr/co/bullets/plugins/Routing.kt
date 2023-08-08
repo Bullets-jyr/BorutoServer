@@ -6,6 +6,7 @@ import io.ktor.server.routing.*
 import kr.co.bullets.routes.getAllHeroes
 import kr.co.bullets.routes.root
 import kr.co.bullets.routes.searchHeroes
+import javax.naming.AuthenticationException
 
 fun Application.configureRouting() {
     routing {
@@ -15,6 +16,10 @@ fun Application.configureRouting() {
         root()
         getAllHeroes()
         searchHeroes()
+
+//        get("/test2") {
+//            throw AuthenticationException()
+//        }
 
         static("/images") {
             resources("images")
